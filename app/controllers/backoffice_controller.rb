@@ -4,4 +4,9 @@ class BackofficeController < ApplicationController
   before_action :authenticate_admin!
 
   layout 'backoffice'
+
+  def pundit_user
+    # current user to Pundit
+    current_admin
+  end
 end
