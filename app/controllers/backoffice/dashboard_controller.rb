@@ -1,5 +1,5 @@
-class Backoffice::DashboardController < ApplicationController
-  layout "backoffice"
-  def index
-  end
+# frozen_string_literal: true
+
+class Backoffice::DashboardController < BackofficeController
+  def index; end
 end

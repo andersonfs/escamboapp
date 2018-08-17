@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -26,8 +28,17 @@ gem 'devise-i18n'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-gem 'rails-assets-bootstrap', '3.3.6', source: 'https://rails-assets.org'
-gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
+# Help ActiveRecord::Enum feature to work fine with I18n and simple_form.
+gem 'enum_help'
+
+source 'https://rails-assets.org' do
+  # Bootstrap
+  gem 'rails-assets-bootstrap', '3.3.6'
+  # NotifyJS
+  gem 'rails-assets-notifyjs'
+  # Bootbox.js is a small JavaScript library which allows you to create programmatic dialog boxes 
+  gem 'rails-assets-bootbox'
+end
 
 # Rails gem of the Bootstrap based admin theme SB Admin 2.
 gem 'bootstrap_sb_admin_base_v2'
@@ -37,6 +48,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -53,20 +66,22 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  # A library for generating fake data such as names, addresses, and phone numbers.
+  gem 'faker'
 end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'web-console', '>= 3.3.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   # Better error page for Rack apps
-  gem "better_errors"
+  gem 'better_errors'
   # Generate Entity-Relationship Diagrams for Rails applications
-  gem "rails-erd"
+  gem 'rails-erd'
 end
 
 group :test do
@@ -78,4 +93,4 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
