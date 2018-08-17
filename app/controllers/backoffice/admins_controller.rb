@@ -62,6 +62,6 @@ class Backoffice::AdminsController < BackofficeController
       params[:admin].delete(:password_confirmation)
     end
 
-    params.require(:admin).permit(:name, :email, :password, :password_confirmation)
+    params.require(:admin).permit(:name, :email, :password, :password_confirmation, :role)
   end  
 end
