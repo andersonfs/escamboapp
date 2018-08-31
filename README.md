@@ -1,24 +1,24 @@
-# README
+# Ruby on Rails - Curso Completo - Módulo 3
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Aqui ficará o código fonte do aplicativo "Escambo APP" desenvolvido no módulo 3 do curso de Ruby on Rails Completo da Udemy.
 
-Things you may want to cover:
+Deseja adquirir o curso? Acesse o link abaixo e saiba como.
 
-* Ruby version
+>> [Ruby on Rails - Curso Completo](http://jacksonpires.blogspot.com.br/2016/05/novo-curso-de-rails-na-udemy.html)
 
-* System dependencies
 
-* Configuration
+## Dependências do projeto
 
-* Database creation
+* ImageMagick (https://www.imagemagick.org)
 
-* Database initialization
+```
+sudo apt-get update
+sudo apt-get install imagemagick libmagickwand-dev
+```
 
-* How to run the test suite
+* Graphviz (https://www.graphviz.org) - Apenas para Ambiente de Desenvolvimento
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+sudo apt-get update
+sudo apt-get install graphviz
+```

@@ -25,14 +25,16 @@
                     <%= f.label :email %>
                     <%= f.text_field :email, class:"form-control", placeholder:"Email do administrador" %>                                  
                 </div>
-                <div class="form-group">
-                    <%= f.label :role %>
-                    <%= f.collection_radio_buttons(:role, options_for_roles, :id, :description) do |builder| %>
-                        <div class="radio">
-                            <%= builder.label {builder.radio_button + builder.text} %>
-                        </div>
-                    <% end %>
-                </div>
+                <% if policy(@admin).edit? %>
+                    <div class="form-group">
+                        <%= f.label :role %>
+                        <%= f.collection_radio_buttons(:role, options_for_roles, :id, :description) do |builder| %>
+                            <div class="radio">
+                                <%= builder.label {builder.radio_button + builder.text} %>
+                            </div>
+                        <% end %>
+                    </div>
+                <% end %>
                 <div class="form-group">
                     <%= f.label :password %>
                     <%= f.password_field :password, class:"form-control", placeholder:"Senha" %>                                  

@@ -6,7 +6,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.1'
 
 # Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting, Rails related I18n stuff
-gem 'rails-i18n'
+#gem 'rails-i18n'
+gem 'rails-i18n', '~> 5.1' # For 5.0.x, 5.1.x and 5.2.x
 # Manage Procfile-based applications
 gem 'foreman'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -50,6 +51,12 @@ gem 'jbuilder', '~> 2.5'
 # Minimal authorization through OO design and pure Ruby classes
 gem 'pundit'
 
+# Integration of RubyMoney - Money with Rails
+gem 'money-rails', '~>1'
+
+# Easy file attachment management for ActiveRecord
+gem "paperclip", "~> 6.0.0"
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -69,6 +76,10 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   # A library for generating fake data such as names, addresses, and phone numbers.
   gem 'faker'
+  # MailCatcher runs a super simple SMTP server which catches any message sent to it to display in a web interface. 
+  gem 'mailcatcher'
+  # O Lero-lero Generator é uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que não tem conteúdo algum.
+  gem 'lerolero_generator'
 end
 
 group :development do

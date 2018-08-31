@@ -3,13 +3,19 @@
 Rails.application.routes.draw do
   namespace :site do
     get 'home', to: 'home#index'
+    namespace :profile do
+      resources :dashboard, only: [:index]
+    end
+    resources :ad_detail, only: [:index, :show]
+    resources :categories, only: [:show]
   end
 
   get 'backoffice', to: 'backoffice/dashboard#index'
 
   namespace :backoffice do
+    resources :send_mail, only: %i[edit create]
     resources :admins, except: [:show]
-    resources :categories, except: %i[show destroy]
+    resources :categories, except: [:show, :destroy]
     resources :diagrams, only: [:index]
     get 'dashboard', to: 'dashboard#index'
   end

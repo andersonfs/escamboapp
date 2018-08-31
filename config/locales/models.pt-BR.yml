@@ -11,7 +11,7 @@
         one: Categoria
         other: Categorias
       ad:
-        on: Anúncio
+        one: Anúncio
         other: Anúncios
     attributes:
       member:

@@ -3,7 +3,7 @@
 class Backoffice::AdminsController < BackofficeController
   before_action :set_admin, only: %i[edit update destroy]
   # Pundit - Garante que colocamos a verificação. Se não colocar, um erro é lançado.
-  after_action :verify_authorized, only: :new
+  after_action :verify_authorized, only: [:new, :destroy]
   after_action :verify_policy_scoped, only: :index
 
   def index
@@ -32,6 +32,7 @@ class Backoffice::AdminsController < BackofficeController
 
   def update
     if @admin.update(params_admin)
+      AdminMailer.update_email(current_admin, @admin).deliver_now
       redirect_to backoffice_admins_path, notice: "O Administrador (#{@admin.name}) foi atualizado com suceso! "
     else
       render :edit
@@ -39,6 +40,7 @@ class Backoffice::AdminsController < BackofficeController
   end
 
   def destroy
+    authorize @admin
     admin_name = @admin.name
     if @admin.destroy
       redirect_to backoffice_admins_path, notice: "O Administrador (#{admin_name}) foi apagado com suceso!"
@@ -54,14 +56,19 @@ class Backoffice::AdminsController < BackofficeController
   end
 
   def params_admin
-    passwd = params[:admin][:password]
-    passwd_confirmation = params[:admin][:password_confirmation]
-
-    if passwd.blank? && passwd_confirmation.blank?
+    if password_blank?
       params[:admin].delete(:password)
       params[:admin].delete(:password_confirmation)
     end
-
-    params.require(:admin).permit(:name, :email, :password, :password_confirmation, :role)
-  end  
+    if @admin.blank?
+      params.require(:admin).permit(:name, :email, :role, :password, :password_confirmation)
+    else 
+      params.require(:admin).permit(policy(@admin).permitted_attributes)
+    end
+  end
+  
+  def password_blank?
+    params[:admin][:password].blank? && 
+    params[:admin][:password_confirmation].blank?
+  end
 end

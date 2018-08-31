@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_16_190715) do
+ActiveRecord::Schema.define(version: 2018_08_25_174532) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -34,11 +34,16 @@ ActiveRecord::Schema.define(version: 2018_08_16_190715) do
   create_table "ads", force: :cascade do |t|
     t.string "title", limit: 255
     t.text "description"
-    t.integer "categofy_id"
+    t.integer "category_id"
     t.integer "member_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["categofy_id"], name: "index_ads_on_categofy_id"
+    t.integer "price_cents", default: 0
+    t.string "picture_file_name"
+    t.string "picture_content_type"
+    t.integer "picture_file_size"
+    t.datetime "picture_updated_at"
+    t.index ["category_id"], name: "index_ads_on_category_id"
     t.index ["member_id"], name: "index_ads_on_member_id"
   end
 
