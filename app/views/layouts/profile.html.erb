@@ -14,10 +14,6 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= stylesheet_link_tag    'site', media: 'all' %>
     <%= stylesheet_link_tag    'site/profile', media: 'all' %>
-
-    <%= javascript_include_tag 'application' %>
-    <%= javascript_include_tag 'site' %>
-    <%= javascript_include_tag 'site/profile' %>
   </head>
 
   <body>
@@ -58,6 +54,13 @@
       </div>
       <!-- /#page-content-wrapper -->
     </div>
+
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'site' %>
+    <%= javascript_include_tag 'site/profile' %>
+
+    <!-- Permite carregar recursos usando o content for -->
+    <%= yield :javascripts %>
 
     <% if notice %>
       <%= javascript_tag "$.notify('#{notice}', 'success');" %>

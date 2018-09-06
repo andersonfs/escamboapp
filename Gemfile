@@ -29,6 +29,9 @@ gem 'devise-i18n'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+# jQuery UI for the Rails asset pipeline
+gem 'jquery-ui-rails'
+
 # Help ActiveRecord::Enum feature to work fine with I18n and simple_form.
 gem 'enum_help'
 
