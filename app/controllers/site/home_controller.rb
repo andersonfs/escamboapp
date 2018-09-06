@@ -4,7 +4,7 @@ class Site::HomeController < SiteController
 
   def index
     @categories = Category.order_by_description
-    @ads = Ad.last_six
+    @ads = Ad.descending_order(15)
     @carousel = Ad.random(3)
   end
 end

@@ -4,8 +4,13 @@ class Ad < ApplicationRecord
   belongs_to :category
   belongs_to :member
 
+  # Validates
+  validates :title, :description, :category, :picture, :finish_date, presence: true
+  validates :price, numericality: { greater_than: 0 }
+
   # Scopes
-  scope :last_six, -> { limit(6).order(created_at: :desc) }
+  scope :descending_order, ->(quantity = 12) { limit(quantity).order(created_at: :desc) }
+  scope :to_the, -> (member) { where(member: member) }
 
   scope :random, ->(quantity) {
     if Rails.env.production?
