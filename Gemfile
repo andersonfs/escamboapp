@@ -38,10 +38,15 @@ gem 'enum_help'
 source 'https://rails-assets.org' do
   # Bootstrap
   gem 'rails-assets-bootstrap', '3.3.6'
-  # NotifyJS
-  gem 'rails-assets-notifyjs'
-  # Bootbox.js is a small JavaScript library which allows you to create programmatic dialog boxes 
+
+  # BootboxJS
   gem 'rails-assets-bootbox'
+
+  # This is a simple plugin that turns standard Bootstrap alerts into "Growl-like" notifications.
+  gem 'rails-assets-bootstrap.growl'
+
+  # Animate CSS - Para dar efeito de animação nas mensagens de alerta.
+  gem 'rails-assets-animate-css'
 end
 
 # Rails gem of the Bootstrap based admin theme SB Admin 2.

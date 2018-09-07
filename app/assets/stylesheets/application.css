@@ -11,6 +11,7 @@
  * file per style scope.
  *carousel slide my-4
  *= require_self
+ *= require animate-css
  */
 
 /* Absolute Center Spinner */

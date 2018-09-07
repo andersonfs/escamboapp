@@ -62,8 +62,6 @@
     <!-- Permite carregar recursos usando o content for -->
     <%= yield :javascripts %>
 
-    <% if notice %>
-      <%= javascript_tag "$.notify('#{notice}', 'success');" %>
-    <% end %>
+    <%= render partial: 'layouts/shared/notifications' %>
   </body>
 </html>

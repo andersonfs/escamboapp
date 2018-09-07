@@ -14,4 +14,4 @@
 //= require jquery_ujs
 //= require rails-ujs
 //= require activestorage
-//= require notifyjs
+//= require bootstrap.growl
