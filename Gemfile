@@ -79,6 +79,9 @@ gem "paperclip", "~> 6.0.0"
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# The safe Markdown parser, reloaded.
+gem 'redcarpet'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
@@ -88,6 +91,9 @@ group :development, :test do
   gem 'mailcatcher'
   # O Lero-lero Generator é uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que não tem conteúdo algum.
   gem 'lerolero_generator'
+
+  # Markdown Lorem Ipsum generator
+  gem 'doctor_ipsum'
 end
 
 group :development do
