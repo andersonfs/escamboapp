@@ -16,6 +16,7 @@ class Ad < ApplicationRecord
   # Scopes
   scope :descending_order, ->(quantity = 12) { limit(quantity).order(created_at: :desc) }
   scope :to_the, -> (member) { where(member: member) }
+  scope :where_category, -> (id) { where(category: id) }
 
   scope :random, ->(quantity) {
     if Rails.env.production?
