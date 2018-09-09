@@ -47,6 +47,12 @@ source 'https://rails-assets.org' do
 
   # Animate CSS - Para dar efeito de animação nas mensagens de alerta.
   gem 'rails-assets-animate-css'
+
+  # Bootstrap plugin for markdown editing
+  gem 'rails-assets-bootstrap-markdown'
+
+  # A markdown parser and compiler. Built for speed.
+  gem 'rails-assets-marked'
 end
 
 # Rails gem of the Bootstrap based admin theme SB Admin 2.
