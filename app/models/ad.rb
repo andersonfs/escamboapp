@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class Ad < ApplicationRecord
+  # Constants
+  QTT_PER_PAGE = 6
 
   # Callbacks
   before_save :md_to_html
@@ -14,12 +16,12 @@ class Ad < ApplicationRecord
   validates :price, numericality: { greater_than: 0 }
 
   # Scopes
-  scope :descending_order, ->(quantity = 12, page = 1) do
-    limit(quantity).order(created_at: :desc).page(page).per(6)
+  scope :descending_order, ->(page) do
+    order(created_at: :desc).page(page).per(QTT_PER_PAGE)
   end
 
-  scope :search, -> (term, page = 1) do
-    where("lower(title) LIKE ?", "%#{term.downcase}%").page(page).per(6)
+  scope :search, -> (term, page) do
+    where("lower(title) LIKE ?", "%#{term.downcase}%").page(page).per(QTT_PER_PAGE)
   end
 
   scope :to_the, -> (member) { where(member: member) }
