@@ -11,6 +11,8 @@ class Ad < ApplicationRecord
   belongs_to :category, counter_cache: true
   belongs_to :member
 
+  has_many :comments
+
   # Validates
   validates :title, :description_md, :description_short, :category, :picture, :finish_date, presence: true
   validates :price, numericality: { greater_than: 0 }
@@ -24,10 +26,9 @@ class Ad < ApplicationRecord
     where("lower(title) LIKE ?", "%#{term.downcase}%").page(page).per(QTT_PER_PAGE)
   end
 
-  scope :to_the, -> (member) { where(member: member) }
-  scope :by_category, -> (id) { where(category: id) }
-
-
+  scope :by_category, -> (id, page) do
+    where(category: id).page(page).per(QTT_PER_PAGE)
+  end
 
   scope :random, ->(quantity) {
     if Rails.env.production?
@@ -36,6 +37,9 @@ class Ad < ApplicationRecord
       limit(quantity).order("RANDOM()") # SQLite
     end
   }
+
+  scope :to_the, -> (member) { where(member: member) }
+  # Scopes
 
   # gem money-rails
   monetize :price_cents
