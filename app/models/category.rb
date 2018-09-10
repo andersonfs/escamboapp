@@ -2,6 +2,10 @@
 
 class Category < ApplicationRecord
 
+  # Gem Friendly Id
+  include FriendlyId
+  friendly_id :description, use: :slugged
+
   # Associtations
   has_many :ads
 
@@ -10,4 +14,5 @@ class Category < ApplicationRecord
 
   # Scopes
   scope :order_by_description, -> { order(:description) }
+
 end

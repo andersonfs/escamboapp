@@ -53,6 +53,9 @@ source 'https://rails-assets.org' do
 
   # A markdown parser and compiler. Built for speed.
   gem 'rails-assets-marked'
+
+  # History.js gracefully supports the HTML5 History/State APIs (pushState, replaceState, onPopState) in all browsers.
+  gem 'rails-assets-history.js'
 end
 
 # Rails gem of the Bootstrap based admin theme SB Admin 2.
@@ -87,6 +90,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 # The safe Markdown parser, reloaded.
 gem 'redcarpet'
+
+# FriendlyId is the “Swiss Army bulldozer” of slugging and permalink plugins for ActiveRecord.
+gem 'friendly_id', '~> 5.2.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
