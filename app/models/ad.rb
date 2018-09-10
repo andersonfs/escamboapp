@@ -14,9 +14,18 @@ class Ad < ApplicationRecord
   validates :price, numericality: { greater_than: 0 }
 
   # Scopes
-  scope :descending_order, ->(quantity = 12) { limit(quantity).order(created_at: :desc) }
+  scope :descending_order, ->(quantity = 12, page = 1) do
+    limit(quantity).order(created_at: :desc).page(page).per(6)
+  end
+
+  scope :search, -> (term, page = 1) do
+    where("lower(title) LIKE ?", "%#{term.downcase}%").page(page).per(6)
+  end
+
   scope :to_the, -> (member) { where(member: member) }
   scope :by_category, -> (id) { where(category: id) }
+
+
 
   scope :random, ->(quantity) {
     if Rails.env.production?
