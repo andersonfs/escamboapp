@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="85cd927c-b89c-4e49-9a82-5863a981fa71" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/members/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/members/sessions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/site_controller.rb" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -63,7 +62,7 @@
           <entry key="js" value="9" />
           <entry key="md" value="2" />
           <entry key="rake" value="8" />
-          <entry key="rb" value="100" />
+          <entry key="rb" value="109" />
           <entry key="scss" value="6" />
           <entry key="yml" value="12" />
         </counts>
@@ -75,9 +74,9 @@
           <entry key="HTML" value="5" />
           <entry key="JavaScript" value="9" />
           <entry key="Markdown" value="2" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PLAIN_TEXT" value="6" />
           <entry key="RHTML" value="103" />
-          <entry key="Ruby" value="117" />
+          <entry key="Ruby" value="123" />
           <entry key="SCSS" value="6" />
           <entry key="YAML" value="12" />
         </counts>
@@ -90,7 +89,7 @@
           <entry key="html" value="9" />
           <entry key="js" value="188" />
           <entry key="rake" value="841" />
-          <entry key="rb" value="3750" />
+          <entry key="rb" value="3787" />
           <entry key="scss" value="32" />
           <entry key="yml" value="62" />
         </counts>
@@ -100,9 +99,9 @@
           <entry key="CSS" value="6" />
           <entry key="HTML" value="9" />
           <entry key="JavaScript" value="188" />
-          <entry key="PLAIN_TEXT" value="57" />
+          <entry key="PLAIN_TEXT" value="81" />
           <entry key="RHTML" value="3151" />
-          <entry key="Ruby" value="4711" />
+          <entry key="Ruby" value="4724" />
           <entry key="SCSS" value="32" />
           <entry key="YAML" value="62" />
         </counts>
@@ -113,11 +112,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="360">
+              <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -131,14 +130,23 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/backoffice_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Ruby Class Template" />
         <option value="HTML File" />
         <option value="Erb File" />
+        <option value="Ruby Class Template" />
       </list>
     </option>
   </component>
@@ -159,8 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/template/login-member/login.html" />
-        <option value="$PROJECT_DIR$/app/views/layouts/backoffice_devise.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/site_devise.html.erb" />
         <option value="$PROJECT_DIR$/app/views/members/sessions/new.html.erb" />
@@ -210,6 +216,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/site.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/members/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/site_conttoller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/site_controller.rb" />
       </list>
     </option>
   </component>
@@ -234,9 +242,9 @@
       <path value="$PROJECT_DIR$/public/templates/sb-admin/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="308" />
-    <option name="y" value="551" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="67" />
+    <option name="y" value="25" />
     <option name="width" value="1396" />
     <option name="height" value="479" />
   </component>
@@ -262,14 +270,13 @@
               <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="members" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
@@ -282,28 +289,6 @@
               <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="ad_detail" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
@@ -325,7 +310,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="route&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;ad&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/ad.rb&#10;rou&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;rout&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;cate&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/category.rb&#10;friend&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/initializers/friendly_id.rb&#10;category&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/category.rb&#10;routes&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;assets&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/initializers/assets.rb&#10;Ad&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/ad.rb" />
+    <property name="SearchEverywhereHistoryKey" value="AdminsH&#9;null&#9;null&#10;route&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;ad&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/ad.rb&#10;rou&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;rout&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;cate&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/category.rb&#10;friend&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/initializers/friendly_id.rb&#10;category&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/category.rb&#10;routes&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;assets&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/initializers/assets.rb&#10;Ad&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/ad.rb" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../multirecarga-snarf-service-rails" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -466,22 +451,21 @@
       <workItem from="1536197983672" duration="10134000" />
       <workItem from="1536286218823" duration="22064000" />
       <workItem from="1536522500397" duration="13899000" />
-      <workItem from="1536598532050" duration="10885000" />
+      <workItem from="1536598532050" duration="12655000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77492000" />
+    <option name="totallyTimeSpent" value="79262000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="308" y="551" width="1396" height="479" extended-state="0" />
-    <editor active="true" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2688889" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20088544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3218391" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32142857" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32900432" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -490,7 +474,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.534632" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2012987" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.64718616" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -525,33 +509,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/site/profile/ads/shared/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/site/profile/ads_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/site/home/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="40" selection-start-column="40" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/site_shared/_carousel.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180909202334_add_slug_to_category.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20180909201937_create_friendly_id_slugs.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -826,6 +783,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/backoffice/admins_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/site_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/members/sessions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -835,8 +806,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="360">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/site_controller_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/site_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/backoffice_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
