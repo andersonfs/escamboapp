@@ -1,8 +1,12 @@
 # frozen_string_literal: true
 
 class Ad < ApplicationRecord
+
   # Constants
   QTT_PER_PAGE = 6
+
+  # RatyRate Gem
+  ratyrate_rateable 'quality'
 
   # Callbacks
   before_save :md_to_html

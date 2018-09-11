@@ -100,6 +100,9 @@ gem 'kaminari'
 # Translations for the kaminari gem
 gem 'kaminari-i18n'
 
+# A Ruby Gem that wraps the functionality of jQuery Raty library, and provides optional IMDB style rating.
+gem 'ratyrate'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]

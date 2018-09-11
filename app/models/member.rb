@@ -1,6 +1,11 @@
 # frozen_string_literal: true
 
 class Member < ApplicationRecord
+
+  # RatyRate Gem
+  ratyrate_rater
+
+  # Associations
   has_many :ads
 
   # Include default devise modules. Others available are:

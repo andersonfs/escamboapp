@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class ApplicationController < ActionController::Base
-  before_filter :store_current_location, :unless => :devise_controller?
+  # before_filter :store_current_location, :unless => :devise_controller?
 
   # Pundit
   include Pundit
