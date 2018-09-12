@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
@@ -8,17 +6,13 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '2d4fa7b7923d6b0d6e27c9b30cca11f8640fefdc1b7d1499b36276df6a758552210d90b55296866c5aec31b1dc65963bd9d52b79f8f88a64f720cd7036acc5a6'
-
-  # ==> Controller configuration
-  # Configure the parent class to the devise controllers.
-  # config.parent_controller = 'DeviseController'
+  # config.secret_key = '2ae35d7e5c9374e25113c36098087c3ce851b428522da7e135f786bc9e8a2b760167e3d8f15bc0c54f6fd93c36b1966fa9ef6d68205235e69228bcabc5281b7b'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+  config.mailer_sender = 'no-reply@escamboapp.com'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
@@ -114,12 +108,9 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '8a649ee08629c7889e9ae27cb33950cfbb0a762fe491e6195bd373ccab8c3fd9630b1b4cc55a67324de088a557aa5ee159a00154f3de5288dca72a992e665616'
+  # config.pepper = '7e73242499dffa1eb6e51d02e42ffd716c9e15c714799372e08b082f17b713a84c4a2334b76168dc8d3b58bd381a8eeeae17613d756a9678db7fc70f6d6a6cae'
 
-  # Send a notification to the original email when the user's email is changed.
-  # config.send_email_changed_notification = false
-
-  # Send a notification email when the user's password is changed.
+  # Send a notification email when the user's password is changed
   # config.send_password_change_notification = false
 
   # ==> Configuration for :confirmable

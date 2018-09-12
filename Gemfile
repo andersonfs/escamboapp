@@ -1,142 +1,118 @@
-# frozen_string_literal: true
-
 source 'https://rubygems.org'
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.1'
-
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '4.2.5'
 # Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting, Rails related I18n stuff
-#gem 'rails-i18n'
-gem 'rails-i18n', '~> 5.1' # For 5.0.x, 5.1.x and 5.2.x
+gem 'rails-i18n'
 # Manage Procfile-based applications
 gem 'foreman'
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.0'
-# Use sqlite3 as the database for Active Record
+# Flexible authentication solution for Rails with Warden
+gem 'devise'
+# Translations for the devise gem
+gem 'devise-i18n'
+# Rails gem of the Bootstrap based admin theme SB Admin 2.
+gem 'bootstrap_sb_admin_base_v2'
+# Help ActiveRecord::Enum feature to work fine with I18n and simple_form.
+gem 'enum_help'
+# Minimal authorization through OO design and pure Ruby classes
+gem 'pundit'
+# Integration of RubyMoney - Money with Rails
+gem 'money-rails'
+# Easy file attachment management for ActiveRecord
+gem 'paperclip', '~> 5.0.0'
+# jQuery UI for the Rails asset pipeline
+gem 'jquery-ui-rails'
+# The safe Markdown parser, reloaded.
+gem 'redcarpet'
+# FriendlyId is the “Swiss Army bulldozer” of slugging and permalink plugins for ActiveRecord
+gem 'friendly_id'
+# If Turbolinks are not enough for you. Wiselinks makes your application work faster.
+gem 'wiselinks'
+# A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
+gem 'kaminari'
+# Translations for the kaminari gem
+gem  'kaminari-i18n'
+# A Ruby Gem that wraps the functionality of jQuery Raty library, and provides optional IMDB style rating.
+gem 'ratyrate'
+# A library for generating fake data such as names, addresses, and phone numbers.
+gem 'faker'
+# Markdown Lorem Ipsum generator
+gem 'doctor_ipsum'
+# O Lero-lero Generator é uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que não tem conteúdo algum.
+gem 'lerolero_generator'
+
+source 'https://rails-assets.org' do
+  # Bootstrap
+  gem 'rails-assets-bootstrap', '3.3.7'
+  # Bootstrap Notify
+  gem 'rails-assets-bootstrap.growl'
+  # BootboxJS
+  gem 'rails-assets-bootbox'
+  # Animate CSS
+  gem 'rails-assets-animate-css'
+  # Bootstrap Mardown
+  gem 'rails-assets-bootstrap-markdown'
+  # Marked
+  gem 'rails-assets-marked'
+end
+
+# Use sqlite3 as the database for Active Record'
 gem 'sqlite3'
-# Use Puma as the app server
-gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
+# Use CoffeeScript for .coffee assets and views
+gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'mini_racer', platforms: :ruby
-# Flexible authentication solution for Rails with Warden.
-gem 'devise'
-# Translations for the devise gem
-gem 'devise-i18n'
+# gem 'therubyracer', platforms: :ruby
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-
-# jQuery UI for the Rails asset pipeline
-gem 'jquery-ui-rails'
-
-# Help ActiveRecord::Enum feature to work fine with I18n and simple_form.
-gem 'enum_help'
-
-source 'https://rails-assets.org' do
-  # Bootstrap
-  gem 'rails-assets-bootstrap', '3.3.6'
-
-  # BootboxJS
-  gem 'rails-assets-bootbox'
-
-  # This is a simple plugin that turns standard Bootstrap alerts into "Growl-like" notifications.
-  gem 'rails-assets-bootstrap.growl'
-
-  # Animate CSS - Para dar efeito de animação nas mensagens de alerta.
-  gem 'rails-assets-animate-css'
-
-  # Bootstrap plugin for markdown editing
-  gem 'rails-assets-bootstrap-markdown'
-
-  # A markdown parser and compiler. Built for speed.
-  gem 'rails-assets-marked'
-
-  # History.js gracefully supports the HTML5 History/State APIs (pushState, replaceState, onPopState) in all browsers.
-  gem 'rails-assets-history.js'
-end
-
-# Rails gem of the Bootstrap based admin theme SB Admin 2.
-gem 'bootstrap_sb_admin_base_v2'
-# Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
+gem 'jbuilder', '~> 2.0'
+# bundle exec rake doc:rails generates the API under doc/api.
+gem 'sdoc', '~> 0.4.0', group: :doc
 
-# Minimal authorization through OO design and pure Ruby classes
-gem 'pundit'
-
-# Integration of RubyMoney - Money with Rails
-gem 'money-rails', '~>1'
-
-# Easy file attachment management for ActiveRecord
-gem "paperclip", "~> 6.0.0"
-
-# Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
-# Use ActiveStorage variant
-# gem 'mini_magick', '~> 4.8'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.1.0', require: false
-
-# The safe Markdown parser, reloaded.
-gem 'redcarpet'
-
-# FriendlyId is the “Swiss Army bulldozer” of slugging and permalink plugins for ActiveRecord.
-gem 'friendly_id', '~> 5.2.0'
-
-# A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
-gem 'kaminari'
-
-# Translations for the kaminari gem
-gem 'kaminari-i18n'
-
-# A Ruby Gem that wraps the functionality of jQuery Raty library, and provides optional IMDB style rating.
-gem 'ratyrate'
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  # A library for generating fake data such as names, addresses, and phone numbers.
-  gem 'faker'
-  # MailCatcher runs a super simple SMTP server which catches any message sent to it to display in a web interface. 
-  gem 'mailcatcher'
-  # O Lero-lero Generator é uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que não tem conteúdo algum.
-  gem 'lerolero_generator'
-
-  # Markdown Lorem Ipsum generator
-  gem 'doctor_ipsum'
-end
-
-group :development do
-  # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'listen', '>= 3.0.5', '< 3.2'
-  gem 'web-console', '>= 3.3.0'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'byebug'
   # Better error page for Rack apps
   gem 'better_errors'
   # Generate Entity-Relationship Diagrams for Rails applications
   gem 'rails-erd'
 end
 
-group :test do
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 2.15', '< 4.0'
-  gem 'selenium-webdriver'
-  # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
+group :development do
+  # Catches mail and serves it through a dream.
+  gem 'mailcatcher'
+  # Access an IRB console on exception pages or by using <%= console %> in views
+  gem 'web-console', '~> 2.0'
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+  # Remote multi-server automation tool
+  gem 'capistrano', '~> 3.7'
+  # Official Ruby on Rails specific tasks for Capistrano
+  gem 'capistrano-bundler', '~> 1.2'
+  # Bundler support for Capistrano 3.x
+  gem 'capistrano-rails', '~> 1.2'
+  # RVM support for Capistrano v3
+  gem 'capistrano-rvm'
+  # Unicorn for Capistrano v3
+  gem 'capistrano3-unicorn'
 end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+group :production do
+  # MySQL Adapter
+  gem 'mysql2', '~> 0.3.18'
+  # Use Unicorn as the app server
+  gem 'unicorn'
+  # Mailgun's Official Ruby Library
+  gem 'mailgun-ruby', '~>1.1.4'
+end
