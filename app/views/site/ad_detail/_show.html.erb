@@ -9,14 +9,12 @@
   </div>
 </div>
 
-
 <div class="well well-sm">
   <div class="ratings">
-    <p class="pull-right"><%= @ad.rates('quality').count %> <%= t('labels.reviews') %></p>
+    <p class="pull-right"><%= @ad.comments.count %> <%= t('labels.comments') %></p>
     <%= rating_for @ad, 'quality', star_path: '/images/ratyrate' %>
   </div>
 </div>
-
 
 <div class="well">
   <% if member_signed_in? %>
