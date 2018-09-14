@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85cd927c-b89c-4e49-9a82-5863a981fa71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/site/profile/my_data/edit.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/members/shared/_form.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/member.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/member.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/profile.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/profile.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/members/registrations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/members/registrations_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/members/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/members/sessions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/members/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/members/registrations/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/site/profile/ads/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/site/profile/ads/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/site/profile/ads/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/site/profile/ads/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/diagram.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/members/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/members/sessions/new.html.erb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -45,9 +44,10 @@
     <session id="-645841826">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.42" value="1" />
@@ -57,25 +57,26 @@
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.65" value="1" />
+          <entry key="project.open.time.66" value="1" />
           <entry key="project.open.time.75" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Gemfile" value="17" />
+          <entry key="Gemfile" value="19" />
           <entry key="coffee" value="4" />
           <entry key="css" value="14" />
-          <entry key="erb" value="145" />
+          <entry key="erb" value="150" />
           <entry key="html" value="5" />
           <entry key="js" value="20" />
           <entry key="md" value="2" />
           <entry key="rake" value="9" />
-          <entry key="rb" value="167" />
+          <entry key="rb" value="173" />
           <entry key="scss" value="7" />
           <entry key="spring" value="1" />
-          <entry key="yml" value="16" />
+          <entry key="yml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -86,23 +87,23 @@
           <entry key="JavaScript" value="20" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="RHTML" value="145" />
-          <entry key="Ruby" value="188" />
+          <entry key="RHTML" value="150" />
+          <entry key="Ruby" value="196" />
           <entry key="SCSS" value="7" />
-          <entry key="YAML" value="16" />
+          <entry key="YAML" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Gemfile" value="187" />
           <entry key="css" value="8" />
-          <entry key="erb" value="4156" />
+          <entry key="erb" value="4263" />
           <entry key="html" value="9" />
           <entry key="js" value="201" />
           <entry key="rake" value="841" />
-          <entry key="rb" value="4583" />
+          <entry key="rb" value="5004" />
           <entry key="scss" value="32" />
-          <entry key="yml" value="62" />
+          <entry key="yml" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -111,49 +112,94 @@
           <entry key="HTML" value="9" />
           <entry key="JavaScript" value="201" />
           <entry key="PLAIN_TEXT" value="81" />
-          <entry key="RHTML" value="4156" />
-          <entry key="Ruby" value="5530" />
+          <entry key="RHTML" value="4263" />
+          <entry key="Ruby" value="5951" />
           <entry key="SCSS" value="32" />
-          <entry key="YAML" value="62" />
+          <entry key="YAML" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.actions.runAnything" />
+      <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/site/profile/my_data_controller.rb">
+        <entry file="file://$PROJECT_DIR$/app/models/member.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="165">
+              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/locales/models.pt-BR.yml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-63">
+              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/site/profile/my_data/edit.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/controllers/members/registrations_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
-              <folding>
-                <element signature="e#107#169#1#ruby" expanded="true" />
-              </folding>
+            <state relative-caret-position="300">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/members/sessions_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/profile.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="40" column="86" selection-start-line="40" selection-start-column="86" selection-end-line="40" selection-end-column="86" />
+            <state relative-caret-position="135">
+              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/members/registrations/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/members/shared/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#45#84#0#HTML" expanded="true" />
+                <element signature="e#299#365#0#HTML" expanded="true" />
+                <element signature="e#487#511#0#HTML" expanded="true" />
+                <element signature="e#547#567#0#HTML" expanded="true" />
+                <element signature="e#2405#2428#0#HTML" expanded="true" />
+                <element signature="e#4772#4791#0#ruby" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/members/sessions/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="44" selection-start-column="44" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -182,6 +228,8 @@
       <find>active</find>
       <find>wise</find>
       <find>@ad</find>
+      <find>Active</find>
+      <find>devise</find>
     </findStrings>
     <replaceStrings>
       <replace>@profile_member</replace>
@@ -193,9 +241,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/backoffice/diagrams/index.hmtl.erb" />
-        <option value="$PROJECT_DIR$/app/views/backoffice/categories/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/backoffice/diagrams/index.html.erb" />
         <option value="$PROJECT_DIR$/lib/tasks/dev.rake" />
         <option value="$PROJECT_DIR$/db/migrate/20180910170438_create_comments.rb" />
         <option value="$PROJECT_DIR$/app/models/comment.rb" />
@@ -210,7 +255,6 @@
         <option value="$PROJECT_DIR$/db/migrate/20180911120146_create_rating_caches.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180911120147_create_rates.rb" />
         <option value="$PROJECT_DIR$/app/controllers/rater_controller.rb" />
-        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/config/initializers/assets.rb" />
         <option value="$PROJECT_DIR$/app/views/site/ad_detail/_comments.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
@@ -222,7 +266,6 @@
         <option value="$PROJECT_DIR$/app/views/layouts/site_devise.html.erb" />
         <option value="$PROJECT_DIR$/app/views/site/ad_detail/show.js.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/site.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/members/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/site.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/backoffice.html.erb" />
@@ -230,11 +273,9 @@
         <option value="$PROJECT_DIR$/app/models/ad.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/site.css" />
         <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/members/registrations_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/site/ad_detail/_show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/ratyrate.js.erb" />
         <option value="$PROJECT_DIR$/app/views/site/shared/_ads.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/members/registrations/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/site/profile/ads/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/site/profile/ads/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/site/profile/my_data/update.html.erb" />
@@ -242,8 +283,15 @@
         <option value="$PROJECT_DIR$/app/models/profile_member.rb" />
         <option value="$PROJECT_DIR$/app/models/member.rb" />
         <option value="$PROJECT_DIR$/app/views/site/profile/my_data/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/site/profile/my_data_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/profile.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/site/profile/my_data_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/members/registrations_controller.rb" />
+        <option value="$PROJECT_DIR$/config/locales/models.pt-BR.yml" />
+        <option value="$PROJECT_DIR$/app/views/members/shared/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/members/registrations/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/members/sessions/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/members/sessions_controller.rb" />
+        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
       </list>
     </option>
   </component>
@@ -268,17 +316,18 @@
       <path value="$PROJECT_DIR$/public/templates/sb-admin/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="25" />
-    <option name="width" value="1597" />
-    <option name="height" value="319" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="469" />
+    <option name="y" value="568" />
+    <option name="width" value="1202" />
+    <option name="height" value="353" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -295,6 +344,12 @@
               <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -302,7 +357,23 @@
               <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+              <item name="members" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="members" type="462c0819:PsiDirectoryNode" />
+              <item name="sessions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="members" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
@@ -319,15 +390,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="rout&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;labels&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/locales/labels.pt-BR.yml&#10;routes&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;labels.&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/locales/labels.pt-BR.yml&#10;ad&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/ad.rb&#10;ApplicationHel&#9;null&#9;null&#10;category&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/category.rb&#10;AdminsH&#9;null&#9;null&#10;route&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;rou&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;cate&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/category.rb&#10;friend&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/initializers/friendly_id.rb&#10;assets&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/initializers/assets.rb&#10;Ad&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/ad.rb" />
+    <property name="SearchEverywhereHistoryKey" value="routes&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;member&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/member.rb&#10;rout&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;labels&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/locales/labels.pt-BR.yml&#10;labels.&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/locales/labels.pt-BR.yml&#10;ad&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/ad.rb&#10;ApplicationHel&#9;null&#9;null&#10;category&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/category.rb&#10;AdminsH&#9;null&#9;null&#10;route&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;rou&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;cate&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/category.rb&#10;friend&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/initializers/friendly_id.rb&#10;assets&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/initializers/assets.rb&#10;Ad&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/ad.rb" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../multirecarga-snarf-service-rails" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../multirecarga-tygus-service-rails" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -474,18 +544,20 @@
       <workItem from="1536598532050" duration="20810000" />
       <workItem from="1536685010648" duration="56000" />
       <workItem from="1536685098421" duration="2931000" />
-      <workItem from="1536713428329" duration="22998000" />
+      <workItem from="1536713428329" duration="23338000" />
+      <workItem from="1536870757144" duration="563000" />
+      <workItem from="1536884902080" duration="4114000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113402000" />
+    <option name="totallyTimeSpent" value="118419000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="469" y="568" width="1202" height="353" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33314887" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31401384" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -538,26 +610,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/puma.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/spring">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="27" lean-forward="true" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/site/ad_detail_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -573,9 +625,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/site/search.coffee">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
@@ -647,37 +696,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-          <folding>
-            <element signature="e#880#901#1#ruby" expanded="true" />
-            <element signature="e#990#1011#1#ruby" expanded="true" />
-            <element signature="e#1208#1229#1#ruby" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/members/registrations_helper.rb">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/members/sessions/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="119" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/members/sessions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="62" selection-start-column="36" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/members/registrations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/ratyrate.js.erb">
       <provider selected="true" editor-type-id="text-editor">
@@ -690,10 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#593#612#0#ruby" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -717,9 +736,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/site/ad_detail/show.js.erb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/site.coffee">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/site.coffee" />
     <entry file="file://$PROJECT_DIR$/config/initializers/assets.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -738,9 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -748,9 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding>
-            <element signature="n#t#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -758,37 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
-          <folding>
-            <element signature="e#80#130#1#ruby" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/members/registrations/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="150" column="9" selection-start-line="150" selection-start-column="9" selection-end-line="150" selection-end-column="9" />
-          <folding>
-            <element signature="e#45#92#0#HTML" expanded="true" />
-            <element signature="n#t#0;n#!!top" expanded="true" />
-            <element signature="e#307#373#0#HTML" expanded="true" />
-            <element signature="e#397#425#0#ruby" expanded="true" />
-            <element signature="e#495#519#0#HTML" expanded="true" />
-            <element signature="e#555#575#0#HTML" expanded="true" />
-            <element signature="e#798#825#0#HTML" expanded="true" />
-            <element signature="e#1073#1100#0#HTML" expanded="true" />
-            <element signature="e#1675#1698#0#HTML" expanded="true" />
-            <element signature="e#1821#1838#0#ruby" expanded="true" />
-            <element signature="e#1961#1994#0#ruby" expanded="true" />
-            <element signature="e#2139#2205#0#HTML" expanded="true" />
-            <element signature="e#2228#2260#0#ruby" expanded="true" />
-            <element signature="e#2371#2395#0#ruby" expanded="true" />
-            <element signature="e#2557#2603#0#HTML" expanded="true" />
-            <element signature="n#t#1;n#!!top" expanded="true" />
-            <element signature="e#2819#2885#0#HTML" expanded="true" />
-            <element signature="n#t#2;n#!!top" expanded="true" />
-            <element signature="e#4947#4966#0#ruby" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -834,13 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/member.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/profile_member.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -848,29 +821,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/models.pt-BR.yml">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/site/profile.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/site/profile/my_data_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/profile.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/site/profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="372">
+          <caret line="40" column="86" selection-start-line="40" selection-start-column="86" selection-end-line="40" selection-end-column="86" />
         </state>
       </provider>
     </entry>
@@ -878,16 +835,96 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/site/profile/my_data_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="73" lean-forward="true" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/overall_average.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/member.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/models.pt-BR.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/members/shared/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#107#169#1#ruby" expanded="true" />
+            <element signature="e#45#84#0#HTML" expanded="true" />
+            <element signature="e#299#365#0#HTML" expanded="true" />
+            <element signature="e#487#511#0#HTML" expanded="true" />
+            <element signature="e#547#567#0#HTML" expanded="true" />
+            <element signature="e#2405#2428#0#HTML" expanded="true" />
+            <element signature="e#4772#4791#0#ruby" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/profile.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/members/registrations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="40" column="86" selection-start-line="40" selection-start-column="86" selection-end-line="40" selection-end-column="86" />
+        <state>
+          <caret selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/members/registrations/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/members/sessions/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="44" selection-start-column="44" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/members/registrations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/members/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
         </state>
       </provider>
     </entry>

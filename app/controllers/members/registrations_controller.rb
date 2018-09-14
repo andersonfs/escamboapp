@@ -14,9 +14,10 @@ class Members::RegistrationsController < Devise::RegistrationsController
     devise_parameter_sanitizer.permit(
         :sign_up,
         keys:[
-            :email, :password, :password_confirmation,
-            :profile_member_attributes => [:first_name, :second_name]
-        ]
+          :email, :password, :password_confirmation,
+          :profile_member_attributes => [:first_name, :second_name]
+      ]
     )
   end
+
 end
