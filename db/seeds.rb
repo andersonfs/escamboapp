@@ -32,7 +32,12 @@ Admin.create!(name: "Administrador Padrão", email: "admin@admin.com",
 puts "Administrador cadastrado com sucesso!"
 
 puts "Cadastrando o Membro Padrão..."
-Member.create!(email: "membro@membro.com",
+member = Member.new(email: "andersonfs@gmail.com",
                password: "123456",
                password_confirmation: "123456")
+member.build_profile_member
+member.profile_member.first_name = "Anderson Firmino"
+member.profile_member.second_name = "da Silva"
+member.save!
+
 puts "Membro cadastrado com sucesso!"

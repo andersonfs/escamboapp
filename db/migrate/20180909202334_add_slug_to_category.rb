@@ -1,4 +1,4 @@
-class AddSlugToCategory < ActiveRecord::Migration[5.2]
+class AddSlugToCategory < ActiveRecord::Migration
   def change
     add_column :categories, :slug, :string
     add_index :categories, :slug, unique: true

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class DeviseCreateMembers < ActiveRecord::Migration[5.2]
+class DeviseCreateMembers < ActiveRecord::Migration
   def change
     create_table :members do |t|
       ## Database authenticatable

@@ -1,4 +1,4 @@
-class AddAdsCountToCategory < ActiveRecord::Migration[5.2]
+class AddAdsCountToCategory < ActiveRecord::Migration
   def change
     add_column :categories, :ads_count, :integer
   end

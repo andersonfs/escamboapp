@@ -1,4 +1,4 @@
-class CreateAverageCaches < ActiveRecord::Migration[5.2]
+class CreateAverageCaches < ActiveRecord::Migration
 
   def self.up
     create_table :average_caches do |t|
