@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85cd927c-b89c-4e49-9a82-5863a981fa71" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/members/mailer/reset_password_instructions.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/members/mailer/reset_password_instructions.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/members/mailer/unlock_instructions.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/members/mailer/unlock_instructions.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/members/passwords/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/members/passwords/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/members/passwords/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/members/passwords/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/buttons.pt-BR.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/buttons.pt-BR.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/labels.pt-BR.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/labels.pt-BR.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -66,15 +66,15 @@
           <entry key="Procfile" value="1" />
           <entry key="coffee" value="4" />
           <entry key="css" value="14" />
-          <entry key="erb" value="155" />
+          <entry key="erb" value="159" />
           <entry key="html" value="5" />
           <entry key="js" value="20" />
           <entry key="md" value="2" />
           <entry key="rake" value="10" />
-          <entry key="rb" value="178" />
+          <entry key="rb" value="180" />
           <entry key="scss" value="7" />
           <entry key="spring" value="1" />
-          <entry key="yml" value="17" />
+          <entry key="yml" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -85,10 +85,10 @@
           <entry key="JavaScript" value="20" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="RHTML" value="155" />
-          <entry key="Ruby" value="202" />
+          <entry key="RHTML" value="159" />
+          <entry key="Ruby" value="204" />
           <entry key="SCSS" value="7" />
-          <entry key="YAML" value="17" />
+          <entry key="YAML" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -96,13 +96,13 @@
           <entry key="Gemfile" value="187" />
           <entry key="Procfile" value="1" />
           <entry key="css" value="8" />
-          <entry key="erb" value="4747" />
+          <entry key="erb" value="4943" />
           <entry key="html" value="9" />
           <entry key="js" value="201" />
           <entry key="rake" value="843" />
-          <entry key="rb" value="5125" />
+          <entry key="rb" value="5195" />
           <entry key="scss" value="32" />
-          <entry key="yml" value="74" />
+          <entry key="yml" value="256" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -111,10 +111,10 @@
           <entry key="HTML" value="9" />
           <entry key="JavaScript" value="201" />
           <entry key="PLAIN_TEXT" value="82" />
-          <entry key="RHTML" value="4747" />
-          <entry key="Ruby" value="6074" />
+          <entry key="RHTML" value="4943" />
+          <entry key="Ruby" value="6144" />
           <entry key="SCSS" value="32" />
-          <entry key="YAML" value="74" />
+          <entry key="YAML" value="256" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -124,47 +124,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/members/shared/_form.html.erb">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/members/passwords/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="225">
+              <caret line="15" column="78" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="78" />
               <folding>
-                <element signature="e#307#373#0#HTML" expanded="true" />
-                <element signature="e#397#425#0#ruby" expanded="true" />
+                <element signature="e#851#875#0#HTML" expanded="true" />
+                <element signature="n#t#0;n#!!top" expanded="true" />
+                <element signature="e#1113#1137#0#HTML" expanded="true" />
+                <element signature="e#1172#1192#0#HTML" expanded="true" />
+                <element signature="e#1418#1445#0#HTML" expanded="true" />
+                <element signature="e#1518#1545#0#HTML" expanded="true" />
+                <element signature="e#1700#1723#0#HTML" expanded="true" />
+                <element signature="e#1423#1453#0#ruby" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
+        <entry file="file://$PROJECT_DIR$/app/views/members/shared/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="96" column="68" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/members/passwords/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <caret line="12" column="93" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="93" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#t#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="e#1435#1470#0#ruby" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/members/mailer/unlock_instructions.html.erb">
+        <entry file="file://$PROJECT_DIR$/config/locales/labels.pt-BR.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="360">
+              <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/members/mailer/reset_password_instructions.html.erb">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/locales/buttons.pt-BR.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="87" selection-start-line="7" selection-start-column="87" selection-end-line="7" selection-end-column="87" />
+            <state relative-caret-position="210">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -206,10 +225,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/site/comments_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/site_conttoller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/site_controller.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20180911120149_create_overall_averages.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180911120148_create_average_caches.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180911120146_create_rating_caches.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180911120147_create_rates.rb" />
@@ -238,7 +253,6 @@
         <option value="$PROJECT_DIR$/app/views/site/profile/ads/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/site/profile/ads/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/site/profile/my_data/update.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/profile_member.rb" />
         <option value="$PROJECT_DIR$/app/models/member.rb" />
         <option value="$PROJECT_DIR$/app/views/site/profile/my_data/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/profile.html.erb" />
@@ -255,8 +269,13 @@
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180913160339_create_profile_members.rb" />
         <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/app/views/members/mailer/unlock_instructions.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/profile_member.rb" />
         <option value="$PROJECT_DIR$/app/views/members/mailer/reset_password_instructions.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/members/mailer/unlock_instructions.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/members/passwords/new.html.erb" />
+        <option value="$PROJECT_DIR$/config/locales/labels.pt-BR.yml" />
+        <option value="$PROJECT_DIR$/config/locales/buttons.pt-BR.yml" />
+        <option value="$PROJECT_DIR$/app/views/members/passwords/edit.html.erb" />
       </list>
     </option>
   </component>
@@ -324,7 +343,26 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="members" type="462c0819:PsiDirectoryNode" />
-              <item name="mailer" type="462c0819:PsiDirectoryNode" />
+              <item name="passwords" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="members" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="locales" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -487,12 +525,12 @@
       <workItem from="1536713428329" duration="23338000" />
       <workItem from="1536870757144" duration="563000" />
       <workItem from="1536884902080" duration="6553000" />
-      <workItem from="1536981694110" duration="1518000" />
+      <workItem from="1536981694110" duration="3843000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122376000" />
+    <option name="totallyTimeSpent" value="124701000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -551,19 +589,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/mailer.text.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/site_devise.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/site/ad_detail/_comment_modal.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3">
@@ -611,13 +636,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/site/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/labels.pt-BR.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/site/ad_detail/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
@@ -697,13 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/profile_member.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -800,13 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/member.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20180913160339_create_profile_members.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -828,16 +832,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/members/shared/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#307#373#0#HTML" expanded="true" />
-            <element signature="e#397#425#0#ruby" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" column="48" lean-forward="true" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/members/mailer/reset_password_instructions.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/members/mailer/unlock_instructions.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -846,27 +863,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
+    <entry file="file://$PROJECT_DIR$/app/models/profile_member.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="48" lean-forward="true" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+        <state relative-caret-position="90">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/members/mailer/unlock_instructions.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/member.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="345">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/members/mailer/reset_password_instructions.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/members/shared/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="87" selection-start-line="7" selection-start-column="87" selection-end-line="7" selection-end-column="87" />
+        <state relative-caret-position="495">
+          <caret line="96" column="68" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/members/passwords/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="93" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="93" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#t#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="e#1435#1470#0#ruby" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/labels.pt-BR.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/buttons.pt-BR.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/members/passwords/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="78" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="78" />
+          <folding>
+            <element signature="e#851#875#0#HTML" expanded="true" />
+            <element signature="n#t#0;n#!!top" expanded="true" />
+            <element signature="e#1113#1137#0#HTML" expanded="true" />
+            <element signature="e#1172#1192#0#HTML" expanded="true" />
+            <element signature="e#1418#1445#0#HTML" expanded="true" />
+            <element signature="e#1518#1545#0#HTML" expanded="true" />
+            <element signature="e#1700#1723#0#HTML" expanded="true" />
+            <element signature="e#1423#1453#0#ruby" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

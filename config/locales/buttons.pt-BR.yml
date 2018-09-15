@@ -11,4 +11,6 @@
     send: Enviar
     send_message: Enviar Mensagem
     search: Pesquisar
+    send_redefine_password: Envie-me instruções para redefinir a senha
+    redefine_password: Redefinir a senha
 
