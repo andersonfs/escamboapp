@@ -256,7 +256,7 @@
       <path value="$PROJECT_DIR$/public/templates/sb-admin/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="133" />
     <option name="y" value="101" />
     <option name="width" value="1698" />
