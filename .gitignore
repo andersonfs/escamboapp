@@ -31,4 +31,5 @@
 
 /public/system
 
-.idea/*
+# Database configuration
+config/database.yml
