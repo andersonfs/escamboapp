@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock "3.11.0"
+lock "3.7.2"
 
 set :application, "EscamboApp"
 set :repo_url, "https://github.com/andersonfs/escamboapp.git"
