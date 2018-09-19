@@ -51,13 +51,14 @@
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.61" value="1" />
+          <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.65" value="1" />
           <entry key="project.open.time.66" value="1" />
           <entry key="project.open.time.69" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.75" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -72,10 +73,10 @@
           <entry key="gitignore" value="3" />
           <entry key="html" value="5" />
           <entry key="js" value="20" />
-          <entry key="log" value="1" />
+          <entry key="log" value="2" />
           <entry key="md" value="2" />
           <entry key="rake" value="11" />
-          <entry key="rb" value="209" />
+          <entry key="rb" value="211" />
           <entry key="ruby-version" value="1" />
           <entry key="scss" value="7" />
           <entry key="spring" value="1" />
@@ -89,10 +90,11 @@
           <entry key="CoffeeScript" value="4" />
           <entry key="HTML" value="5" />
           <entry key="JavaScript" value="20" />
+          <entry key="Log" value="1" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="14" />
           <entry key="RHTML" value="160" />
-          <entry key="Ruby" value="242" />
+          <entry key="Ruby" value="244" />
           <entry key="SCSS" value="7" />
           <entry key="YAML" value="21" />
         </counts>
@@ -107,6 +109,7 @@
           <entry key="gitignore" value="39" />
           <entry key="html" value="9" />
           <entry key="js" value="201" />
+          <entry key="log" value="6" />
           <entry key="rake" value="874" />
           <entry key="rb" value="5211" />
           <entry key="scss" value="32" />
@@ -118,6 +121,7 @@
           <entry key="CSS" value="8" />
           <entry key="HTML" value="9" />
           <entry key="JavaScript" value="201" />
+          <entry key="Log" value="6" />
           <entry key="PLAIN_TEXT" value="121" />
           <entry key="RHTML" value="4943" />
           <entry key="Ruby" value="6354" />
@@ -132,9 +136,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.ruby-version">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log/capistrano.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider">
+            <state relative-caret-position="793">
+              <caret line="4392" lean-forward="true" selection-start-line="4392" selection-end-line="4392" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/ad.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="642">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -256,7 +282,7 @@
       <path value="$PROJECT_DIR$/public/templates/sb-admin/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="67" />
     <option name="y" value="25" />
     <option name="width" value="934" />
@@ -267,7 +293,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,16 +301,32 @@
               <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="capfile&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/Capfile&#10;routes&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;member&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/member.rb&#10;rout&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;labels&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/locales/labels.pt-BR.yml&#10;labels.&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/locales/labels.pt-BR.yml&#10;ad&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/ad.rb&#10;ApplicationHel&#9;null&#9;null&#10;category&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/category.rb&#10;AdminsH&#9;null&#9;null&#10;route&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;rou&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;cate&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/category.rb&#10;friend&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/initializers/friendly_id.rb&#10;assets&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/initializers/assets.rb&#10;Ad&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/ad.rb" />
+    <property name="SearchEverywhereHistoryKey" value="stderr&#9;null&#9;null&#10;capfile&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/Capfile&#10;routes&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;member&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/member.rb&#10;rout&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;labels&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/locales/labels.pt-BR.yml&#10;labels.&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/locales/labels.pt-BR.yml&#10;ad&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/ad.rb&#10;ApplicationHel&#9;null&#9;null&#10;category&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/category.rb&#10;AdminsH&#9;null&#9;null&#10;route&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;rou&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/routes.rb&#10;cate&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/category.rb&#10;friend&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/initializers/friendly_id.rb&#10;assets&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/config/initializers/assets.rb&#10;Ad&#9;FILE&#9;file:///home/anderson/dev/projetos/udemy/escamboapp/app/models/ad.rb" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../multirecarga-tygus-service-rails" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -440,17 +482,18 @@
       <workItem from="1537142069036" duration="6479000" />
       <workItem from="1537234250514" duration="2470000" />
       <workItem from="1537238352998" duration="3354000" />
+      <workItem from="1537321790391" duration="864000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139238000" />
+    <option name="totallyTimeSpent" value="140102000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2750415" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27836192" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -498,13 +541,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/locales/models.pt-BR.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/members/registrations/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -654,13 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/ad.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/site/home_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -727,18 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/capistrano.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="747">
-          <caret line="2684" column="1" selection-start-line="2684" selection-start-column="1" selection-end-line="2684" selection-end-column="1" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="854">
-          <caret line="858" column="18" lean-forward="true" selection-start-line="858" selection-start-column="18" selection-end-line="858" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Capfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -783,8 +800,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.5.1/gems/spring-2.0.2/lib/spring/test/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.ruby-version">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/capistrano.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="793">
+          <caret line="4392" lean-forward="true" selection-start-line="4392" selection-end-line="4392" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="854">
+          <caret line="858" column="18" lean-forward="true" selection-start-line="858" selection-start-column="18" selection-end-line="858" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/ad.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
