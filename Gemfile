@@ -97,7 +97,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   # Remote multi-server automation tool
-  gem 'capistrano', '~> 3.7'
+  gem 'capistrano', '= 3.7.2'
   # Official Ruby on Rails specific tasks for Capistrano
   gem 'capistrano-bundler', '~> 1.2'
   # Bundler support for Capistrano 3.x
