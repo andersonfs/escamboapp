@@ -34,4 +34,4 @@
 # Database configuration
 config/database.yml
 
-.idea/*
+.idea/workspace.xml
