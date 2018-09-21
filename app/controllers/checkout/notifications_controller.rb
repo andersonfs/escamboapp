@@ -2,7 +2,7 @@ class Checkout::NotificationsController < ApplicationController
   skip_before_filter :verify_authenticity_token, only: :create
 
   def create
-    transaction = PagSeguro::Transaction.find_by_notification_code(params[:notificationCode])
+    transaction = PagSeguro::Transaction.find_by_notification_code(params[:b])
 
     if transaction.errors.empty?
       status_code = transaction.status.id.to_i
