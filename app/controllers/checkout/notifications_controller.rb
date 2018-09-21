@@ -9,16 +9,16 @@ class Checkout::NotificationsController < ApplicationController
       order_id = transaction.reference.to_i
 
       order = Order.find(order_id)
-      order.stars = status_code
+      order.status = status_code
       order.save
 
       if status_code == 3
         ad = Ad.find(order.ad.id)
-        ad.done!
+        ad.sold!
       end
     end
 
-    render nothig: true, status: 200
+    render nothing: true, status: 200
   end
 
 end
