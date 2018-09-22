@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85cd927c-b89c-4e49-9a82-5863a981fa71" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/views/backoffice/categories/index.pdf.prawn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/checkout/notifications_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/checkout/notifications_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/site/search_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/site/search_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/site.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/site.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/backoffice/categories/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/backoffice/categories/index.html.erb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -70,12 +71,12 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Capfile" value="4" />
-          <entry key="Gemfile" value="26" />
+          <entry key="Gemfile" value="27" />
           <entry key="Procfile" value="2" />
           <entry key="builder" value="1" />
           <entry key="coffee" value="4" />
           <entry key="css" value="15" />
-          <entry key="erb" value="168" />
+          <entry key="erb" value="169" />
           <entry key="example" value="1" />
           <entry key="gitignore" value="3" />
           <entry key="html" value="5" />
@@ -84,6 +85,7 @@
           <entry key="js" value="23" />
           <entry key="log" value="2" />
           <entry key="md" value="2" />
+          <entry key="prawn" value="1" />
           <entry key="rake" value="12" />
           <entry key="rb" value="239" />
           <entry key="ruby-version" value="1" />
@@ -101,10 +103,10 @@
           <entry key="JavaScript" value="23" />
           <entry key="Log" value="1" />
           <entry key="Markdown" value="2" />
-          <entry key="PLAIN_TEXT" value="16" />
-          <entry key="RHTML" value="168" />
+          <entry key="PLAIN_TEXT" value="17" />
+          <entry key="RHTML" value="169" />
           <entry key="RXML" value="1" />
-          <entry key="Ruby" value="278" />
+          <entry key="Ruby" value="279" />
           <entry key="SCSS" value="7" />
           <entry key="YAML" value="27" />
         </counts>
@@ -112,18 +114,19 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Capfile" value="14" />
-          <entry key="Gemfile" value="438" />
+          <entry key="Gemfile" value="459" />
           <entry key="Procfile" value="23" />
           <entry key="css" value="8" />
-          <entry key="erb" value="5280" />
+          <entry key="erb" value="5346" />
           <entry key="gitignore" value="39" />
           <entry key="html" value="9" />
           <entry key="jbuider" value="73" />
           <entry key="jbuilder" value="245" />
           <entry key="js" value="210" />
           <entry key="log" value="6" />
+          <entry key="prawn" value="229" />
           <entry key="rake" value="874" />
-          <entry key="rb" value="7922" />
+          <entry key="rb" value="7923" />
           <entry key="scss" value="32" />
           <entry key="yml" value="633" />
         </counts>
@@ -134,9 +137,9 @@
           <entry key="HTML" value="9" />
           <entry key="JavaScript" value="210" />
           <entry key="Log" value="6" />
-          <entry key="PLAIN_TEXT" value="216" />
-          <entry key="RHTML" value="5280" />
-          <entry key="Ruby" value="9412" />
+          <entry key="PLAIN_TEXT" value="445" />
+          <entry key="RHTML" value="5346" />
+          <entry key="Ruby" value="9434" />
           <entry key="SCSS" value="32" />
           <entry key="YAML" value="633" />
         </counts>
@@ -148,11 +151,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/site/search_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state relative-caret-position="90">
+              <caret line="6" column="78" selection-start-line="6" selection-start-column="78" selection-end-line="6" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/backoffice/categories/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/backoffice/categories/index.pdf.prawn">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -212,8 +242,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/profile.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/site/profile/my_data_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/members/registrations_controller.rb" />
         <option value="$PROJECT_DIR$/config/locales/models.pt-BR.yml" />
         <option value="$PROJECT_DIR$/app/views/members/registrations/new.html.erb" />
@@ -255,7 +283,6 @@
         <option value="$PROJECT_DIR$/config/initializers/pagseguro.rb" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/controllers/checkout/payments_controller.rb" />
@@ -263,6 +290,9 @@
         <option value="$PROJECT_DIR$/app/controllers/site/home_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/site.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/site/search_controller.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/backoffice/categories/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/backoffice/categories/index.pdf.prawn" />
       </list>
     </option>
   </component>
@@ -287,9 +317,9 @@
       <path value="$PROJECT_DIR$/public/templates/sb-admin/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="364" />
-    <option name="y" value="545" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="67" />
+    <option name="y" value="25" />
     <option name="width" value="1556" />
     <option name="height" value="460" />
   </component>
@@ -314,19 +344,6 @@
               <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -334,7 +351,15 @@
               <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+              <item name="backoffice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="escamboapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="escamboapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="backoffice" type="462c0819:PsiDirectoryNode" />
+              <item name="categories" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -507,18 +532,18 @@
       <workItem from="1537549225317" duration="7455000" />
       <workItem from="1537558503049" duration="395000" />
       <workItem from="1537558962106" duration="1977000" />
-      <workItem from="1537568373928" duration="2378000" />
+      <workItem from="1537568373928" duration="4567000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164217000" />
+    <option name="totallyTimeSpent" value="166406000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="364" y="545" width="1556" height="460" extended-state="0" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18145695" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15163255" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -531,7 +556,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.40722495" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.4069264" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.64718616" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -566,16 +591,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/unicorn/production.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy/production.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
@@ -793,13 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -861,8 +869,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/site/search_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        <state relative-caret-position="90">
+          <caret line="6" column="78" selection-start-line="6" selection-start-column="78" selection-end-line="6" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/backoffice/categories/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/backoffice/categories/index.pdf.prawn">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
         </state>
       </provider>
     </entry>
