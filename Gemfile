@@ -82,6 +82,8 @@ gem 'prawn-rails'
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
 
+# Geração de Gráficos
+gem 'chartkick'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
