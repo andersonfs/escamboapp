@@ -88,6 +88,9 @@ gem 'chartkick'
 # Intelligent search made easy with Rails and Elasticsearch
 gem 'searchkick'
 
+# Gem para background Jobs
+gem 'sidekiq'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
