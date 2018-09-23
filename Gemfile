@@ -85,6 +85,9 @@ gem 'wkhtmltopdf-binary'
 # Geração de Gráficos
 gem 'chartkick'
 
+# Intelligent search made easy with Rails and Elasticsearch
+gem 'searchkick'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

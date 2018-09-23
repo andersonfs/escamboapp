@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class Ad < ApplicationRecord
+  # Searchkick Gem
+  searchkick
 
   # Ad Statuses
   enum status: [:active, :processing, :sold]
@@ -29,9 +31,9 @@ class Ad < ApplicationRecord
     order(created_at: :desc).page(page).per(QTT_PER_PAGE)
   end
 
-  scope :search, -> (term, page) do
-    where("lower(title) LIKE ?", "%#{term.downcase}%").page(page).per(QTT_PER_PAGE)
-  end
+  #scope :search, -> (term, page) do
+  #  where("lower(title) LIKE ?", "%#{term.downcase}%").page(page).per(QTT_PER_PAGE)
+  #end
 
   scope :by_category, -> (id, page) do
     where(category: id).page(page).per(QTT_PER_PAGE)
