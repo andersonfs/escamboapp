@@ -3,6 +3,7 @@
 class Site::HomeController < SiteController
 
   def index
+    HardWorker.perform_async("HOME CONTROLLER")
     @categories = Category.order_by_description
     @ads = Ad.descending_order(params[:page])
     @carousel = Ad.random(3)
