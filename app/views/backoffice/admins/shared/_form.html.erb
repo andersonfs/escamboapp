@@ -28,9 +28,10 @@
                 <% if policy(@admin).edit? %>
                     <div class="form-group">
                         <%= f.label :role %>
-                        <%= f.collection_radio_buttons(:role, options_for_roles, :id, :description) do |builder| %>
+                        <%= f.collection_check_boxes(:role_ids, options_for_roles, :id,
+                                 :description, checked: @admin.checked_roles) do |b| %>
                             <div class="radio">
-                                <%= builder.label {builder.radio_button + builder.text} %>
+                                <%= b.label {b.check_box + b.text} %>
                             </div>
                         <% end %>
                     </div>

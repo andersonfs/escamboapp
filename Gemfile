@@ -91,6 +91,9 @@ gem 'searchkick'
 # Gem para background Jobs
 gem 'sidekiq'
 
+# Role management library with resource scoping
+gem 'rolify'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

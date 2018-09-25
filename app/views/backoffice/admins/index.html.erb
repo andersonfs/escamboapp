@@ -18,7 +18,7 @@
                             <th>#</th>
                             <th><%= @admins.model.human_attribute_name("name") %></th>
                             <th><%= @admins.model.human_attribute_name("email") %></th>
-                            <th><%= @admins.model.human_attribute_name("role") %></th>
+                            <th><%= "#{t('labels.access_type')}" %></th>
                             <th></th>
                         </tr>
                     </thead>
@@ -28,7 +28,7 @@
                             <td><%= admin.id %></td>
                             <td><%= admin.name %></td>
                             <td><%= admin.email %></td>
-                            <td><%= admin.role_i18n %></td>
+                            <td><%= admin.roles_descriptions.join(', ') %></td>
                             <td style="width: 150px">
                                 <%= link_to edit_backoffice_send_mail_path(admin), class: "btn btn-info btn-circle", 
                                     remote: true do %>
